@@ -90,7 +90,10 @@
 							?>
 							<div class="swiper-slide">
 								<a href="<?php echo $video_link; ?>" class="video" target="_blank">
-									<img src="<?= $video_img ?>">
+									<div class="video-image">
+										<img src="<?= $video_img ?>">
+										<div class="play"></div>
+									</div>
 									<p><?php echo $video_name; ?></p>
 								</a>
 							

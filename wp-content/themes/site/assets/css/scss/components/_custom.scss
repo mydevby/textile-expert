@@ -19,9 +19,6 @@
 .services-block .name {margin-bottom: 30px;}
 
 .services-block .text-default{margin-bottom: 40px;}
-.video-block {padding: 140px 0}
-.video-block .top-text{margin-bottom: 16px}
-.video-block .name {margin-bottom: 40px}
 .button.link {
 	display: inline-block;
 	color: #fff;
@@ -126,25 +123,6 @@
 	gap: 10px;
 	align-self: stretch;}
 .service-title .top-text {flex: 1 0 0;}
-
-.videos {position: relative}
-
-.videos .swiper-button-next {right: -33px;}
-.videos .swiper-button-prev {left: -33px;}
-
-.videos .video {display: inline-flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 16px;}
-.videos .swiper-button-next:after, .videos .swiper-button-prev:after{display: none}
-.videos .video img {height: 320px;border-radius: 4px;
-	background: linear-gradient(1deg, #26231F 0.95%, rgba(38, 35, 31, 0.00) 99.29%), url(<path-to-image>), lightgray 50% / cover no-repeat;}
-.videos .video p {color: var(--brown-black, #26231F);
-	font-family: Actay Wide;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 140%;}
 
 .news .one-news {
 	display: flex;
