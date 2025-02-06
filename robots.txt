@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+Crawl-delay:3
+sitemap:https://textile-expert.ru/sitemap.xml
+sitemap:https://textile-expert.ru/sitemapindex.xml
+sitemap:https://textile-expert.ru/sitemapmobileindex.xml
+sitemap:https://textile-expert.ru/sitemap-hot-2996989.xml
+sitemap:https://textile-expert.ru/sitemap-hot-2994989.xml
+sitemap:https://textile-expert.ru/sitemap-hot-2992989.xml
+sitemap:https://textile-expert.ru/sitemap-hot-2990989.xml
+sitemap:https://textile-expert.ru/sitemap-hot-2988989.xml
+sitemap:https://textile-expert.ru/sitemap-hot-2986989.xml
+sitemap:https://textile-expert.ru/sitemap-hot-2984989.xml
+sitemap:https://textile-expert.ru/sitemap-hot-2982989.xml
+sitemap:https://textile-expert.ru/sitemap-hot-2980989.xml
+sitemap:https://textile-expert.ru/sitemap-hot-2978989.xml
+sitemap:https://textile-expert.ru/sitemap-hot-2976989.xml
+sitemap:https://textile-expert.ru/sitemap-hot-2974989.xml
+sitemap:https://textile-expert.ru/sitemap-hot-2972989.xml
+sitemap:https://textile-expert.ru/sitemap-hot-2970989.xml
+sitemap:https://textile-expert.ru/sitemap-hot-2968989.xml
+sitemap:https://textile-expert.ru/sitemap-hot-2966989.xml
