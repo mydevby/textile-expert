@@ -1,10 +1,12 @@
 <head>
 	<title>Текстиль Эксперт</title>
 </head>
+
 <?php get_header() ?>
+
 <div class="preview-block text-center bg-default">
     <div class="container">
-<p class="top-text">Проект Сергея Медвецкого</p>
+		<p class="top-text">Проект Сергея Медвецкого</p>
         <div class="preview-info">
             <h1>ТЕКСТИЛЬ-ЭКСПЕРТ</h1>
             <p>Ваш личный гид в мире текстильных изделий</p>
@@ -12,19 +14,18 @@
         <a href="/kontakty" class="custom_button button link">Получить консультацию</a>
     </div>
 </div>
+
 <div class="preview-images">
-   <div class="row">
-       <div class="col-md-6 col-sm-12 pr-0">
-           <img src="<?=get_stylesheet_directory_uri()?>/assets/img/preview2.png">
-
-       </div>
-       <div class="col-md-6 col-sm-12 pl-0">
-           <img src="<?=get_stylesheet_directory_uri()?>/assets/img/preview1.png">
-       </div>
-   </div>
-
-
+	<div class="row">
+		<div class="col-md-6 col-sm-12 pr-0">
+			<img src="<?= get_stylesheet_directory_uri() ?>/assets/img/preview2.png">
+		</div>
+		<div class="col-md-6 col-sm-12 pl-0">
+			<img src="<?= get_stylesheet_directory_uri() ?>/assets/img/preview1.png">
+		</div>
+	</div>
 </div>
+
 <div class="services-block">
     <div class="container">
         <div>
@@ -52,7 +53,7 @@
 
                 </div>
                 <div class="col-md-5 col-sm-12">
-                    <a href="<?the_permalink(8)?>" class="service bg-default">
+                    <a href="<?php the_permalink(8) ?>" class="service bg-default">
                      <div class="service-title">
                          <p class="top-text">
                              Консалтинг
@@ -125,33 +126,34 @@
         <p class="text-default">Курс по текстилю</p>
         <div class="news">
            <div class="row">
-            <?for($i=1; $i<=3; $i++){?>
-            <div class="col-md-4 col-sm-12">
-                <a href="#" class="one-news">
-                <div class="news-img">
-                    <img src="<?=get_stylesheet_directory_uri()?>/assets/img/video.png">
-                </div>
-                <div class="news-desc">
-                <div class="news-time"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-<path d="M7.99961 14.4001C11.5342 14.4001 14.3996 11.5347 14.3996 8.0001C14.3996 4.46548 11.5342 1.6001 7.99961 1.6001C4.46499 1.6001 1.59961 4.46548 1.59961 8.0001C1.59961 11.5347 4.46499 14.4001 7.99961 14.4001Z" stroke="#CCC6C0" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8 5.6001V8.8001L9.6 10.4001" stroke="#CCC6C0" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                <span>4 часа назад</span>
-                </div>
-                    <div class="news-title">
-                        <p>36-е исследование по качеству пряжи</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M7.5 15L12.5 10L7.5 5" stroke="#26231F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-
-                    <div class="news-info text-default">
-                        Фабрики, участвующие в исследованиях CPQ, ранжируются на основе вклада (на веретено в год), который они заработали...
-                    </div>
-                </div>
-            </a>
-            </div>
-    <?}?>
+            <?php for($i=1; $i<=3; $i++){ ?>
+				<div class="col-md-4 col-sm-12">
+					<a href="#" class="one-news">
+						<div class="news-img">
+							<img src="<?=get_stylesheet_directory_uri()?>/assets/img/video.png">
+						</div>
+						<div class="news-desc">
+							<div class="news-time">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path d="M7.99961 14.4001C11.5342 14.4001 14.3996 11.5347 14.3996 8.0001C14.3996 4.46548 11.5342 1.6001 7.99961 1.6001C4.46499 1.6001 1.59961 4.46548 1.59961 8.0001C1.59961 11.5347 4.46499 14.4001 7.99961 14.4001Z" stroke="#CCC6C0" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M8 5.6001V8.8001L9.6 10.4001" stroke="#CCC6C0" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+								<span>4 часа назад</span>
+							</div>
+							<div class="news-title">
+								<p>36-е исследование по качеству пряжи</p>
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+									<path d="M7.5 15L12.5 10L7.5 5" stroke="#26231F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+	
+							<div class="news-info text-default">
+								Фабрики, участвующие в исследованиях CPQ, ранжируются на основе вклада (на веретено в год), который они заработали...
+							</div>
+						</div>
+					</a>
+				</div>
+    		<?php } ?>
            </div>
         </div>
     </div>
