@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Курсы
+Template Name: Курс
 */
 ?>
 

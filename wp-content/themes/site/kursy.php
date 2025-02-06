@@ -1,8 +1,12 @@
-
+<?php
+/*
+Template Name: Курсы
+*/
+?>
 <head>
 	<title>Курсы</title>
 </head>
-<?get_header();?>
+<?php get_header(); ?>
 <div class="course-preview">
     <div class="container">
         <div class="row">
@@ -31,12 +35,6 @@
                     <div class="grid-item" style="    grid-template-rows: none!important;">
                         <img src="<?=get_stylesheet_directory_uri()?>/assets/img/course1.png" class="grid-item-third">
                     </div>
-
-
-
-
-
-
                 </div>
             </div>
         </div>
@@ -111,7 +109,7 @@
         <div class="previews">
             <div class="list swiper-preview">
                 <div class="swiper-wrapper">
-					<?for($i=1; $i<=7; $i++){?>
+					<?php for($i=1; $i<=7; $i++){ ?>
                         <div class="preview swiper-slide">
 							<div class="preview-user">Иван</div>
 							<div class="preview-title">Очень понравился курс!</div>
@@ -127,7 +125,9 @@
 
         </div>
     </div>
+	
 	<?php get_template_part( 'templates/parts/expert', null,array('class'=>'pb-0') ); ?>
+	
 </div>
 
 <?php get_footer(); ?>
