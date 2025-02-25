@@ -13,30 +13,16 @@ Template Name: Консалтинг
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-				     <?php if (have_rows('about-block')) {
-						// Цикл по повторяющемуся полю "works_cases"
-						while (have_rows('about-block')) {
-							the_row();
-
-							// Получаем значения вложенных полей
-							$kons_str = get_sub_field('kons_str');
-							$kons_zag = get_sub_field('kons_zag');
-							$kons_opis = get_sub_field('kons_opis');
-					?>
                         <div class="text">
                             <div class="top-text">
-                                <?php echo $kons_str; ?>
+								Консалтинг
                             </div>
                             <div class="name">
-                               <?php echo $kons_zag; ?>
+								<?= get_field('zagolovok_konsaltinga') ?>
                             </div>
-                            <p> <?php echo $kons_opis; ?></p>
+                            <?= get_field('opisanie_konsaltinga') ?>
                             <a href="/kontakty" class="link">Получить консультацию</a>
                         </div>
-						<?php
-						}
-					}
-					?>
                     </div>
                 </div>
             </div>
@@ -229,7 +215,7 @@ Template Name: Консалтинг
                 </div>
             </div>
         </div>
-        <?php get_template_part( 'templates/parts/expert', null,array('class'=>'pb-0') );?>
+        <?php get_template_part( 'templates/common/expert', null,array('class'=>'white') );?>
 
     </div>
 <?php get_footer(); ?>

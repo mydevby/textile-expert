@@ -232,8 +232,6 @@ function wp_schedule_single_event( $timestamp, $hook, $args = array(), $wp_error
  * @return bool|WP_Error True if event successfully scheduled. False or WP_Error on failure.
  */
 function wp_schedule_event( $timestamp, $recurrence, $hook, $args = array(), $wp_error = false ) {
-    
-    
 	// Make sure timestamp is a positive integer.
 	if ( ! is_numeric( $timestamp ) || $timestamp <= 0 ) {
 		if ( $wp_error ) {

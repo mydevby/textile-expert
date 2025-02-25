@@ -6,19 +6,19 @@ Template Name: Контакты
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты</title>
-   
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Контакты</title>
 </head>
 <body>
 <?php get_header(); ?>
-<div class="preview-block text-center">
-    <div class="container">
-        <div class="preview-info">
-            <h1>Контакты</h1>
-            <p>Готов ответить на любые вопросы и предложения о сотрудничестве</p>
-        </div>
+<main>
+	<div class="container text-center">
+		
+		<div class="contacts-preview">
+			<h1><?=  get_field('zagolovok_straniczy') ?></h1>
+			<p><?=  get_field('opisanie_straniczy') ?></p>
+		</div>
 		
 		<div class="contacts-info">
 		<?php if (have_rows('contacts')) {
@@ -35,7 +35,7 @@ Template Name: Контакты
 				class="contacts-item"
 				href="<?php echo $contacts_link; ?>"
 				target="_blank"
-				rel="noopener noreferrer"
+				rel="noopener noreferrer nofollow"
 			>
 				<div class="contacts-name">
 				   <?php echo $contacts_title; ?>
@@ -44,13 +44,11 @@ Template Name: Контакты
 				   <?php echo $contacts_text; ?>
 			   </div>
 			</a>
-		<?php
-			}
-		}
-		?>
+		<?php } } ?>
 		</div>
-    </div>
-</div>
+		
+	</div>
+</main>
 <?php get_footer(); ?>
 </body>
 </html>

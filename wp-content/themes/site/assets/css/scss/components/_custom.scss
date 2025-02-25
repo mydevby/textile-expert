@@ -1,5 +1,10 @@
 .bg-default{background: #F8F6F5;}
 .footer-block {padding-top: 100px}
+.max-520 {
+	max-width: 520px;
+	margin-left: auto;
+	margin-right: auto;
+}
 .home header, .page-id-8 header {background: #F8F6F5;}
 .name{font-family: Actay Wide;
 	font-size: 36px;
@@ -55,36 +60,9 @@
 	font-weight: 600;}
 
 .expert-block {padding: 115px 0 115px 0}
+.expert-block.white {padding: 70px 0; background: white;}
 .expert-block.expert-reverse .content {padding: 88px 600px 88px 0;}
 .expert-block.expert-reverse .image {right: 0; left: auto}
-
-.preview-block .button.link {
-	margin-top: 74px}
-
-.preview-block {padding: 110px 0 70px 0}
-.preview-block h1{color: var(--brown-black, #26231F);
-	text-align: center;
-	font-family: Actay Wide;
-	font-size: 48px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 120%;
-	align-self: stretch;
-}
-.preview-block .preview-info p {color: var(--brown-gray, #8C857F);
-	text-align: center;
-	font-family: Montserrat;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 140%;
-	align-self: stretch;}
-.preview-block .preview-info {
-	margin-top: 32px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 10px;}
 
 .services .top-text{
 	font-size: 24px;

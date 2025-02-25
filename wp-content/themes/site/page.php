@@ -223,7 +223,7 @@
                 </div>
             </div>
         </div>
-        <?get_template_part( 'templates/parts/expert', null,array('class'=>'pb-0') );?>
+        <?get_template_part( 'templates/common/expert', null,array('class'=>'pb-0') );?>
 
     </div>
 <?php get_footer(); ?>

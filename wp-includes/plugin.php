@@ -480,8 +480,6 @@ function add_action( $hook_name, $callback, $priority = 10, $accepted_args = 1 )
  *                          functions hooked to the action. Default empty.
  */
 function do_action( $hook_name, ...$arg ) {
-    
-    
 	global $wp_filter, $wp_actions, $wp_current_filter;
 
 	if ( ! isset( $wp_actions[ $hook_name ] ) ) {

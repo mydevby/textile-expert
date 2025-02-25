@@ -6,12 +6,13 @@
                 По вопросам сотрудничества
                 <a href="mailto:textileexpert2000@gmail.com">textileexpert2000@gmail.com</a>
             </div>
-            <a href="#" class="yt">YouTube</a>
+            <a href="https://www.youtube.com/@TextileExpertBelarus" class="yt" target="_blank">YouTube</a>
         </div>
         <ul>
             <li><a href="<?the_permalink(13)?>">Обучающие курсы</a></li>
             <li><a href="<?the_permalink(8)?>">Консалтинговые услуги</a></li>
-            <li><a href="#">Об эксперте</a></li>
+            <li><a href="<?the_permalink(15)?>">Блог</a></li>
+			<li><a href="<?the_permalink(82)?>">Контакты</a></li>
         </ul>
     </div>
 </nav>

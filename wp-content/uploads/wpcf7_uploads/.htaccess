@@ -1,4 +1,9 @@
-<FilesMatch '.(py|exe|php|PHP|Php|PHp|pHp|pHP|pHP7|PHP7|phP|PhP|php5|suspected)$'>
-Order allow,deny
-Deny from all
-</FilesMatch>
+# Apache 2.4+
+<IfModule authz_core_module>
+    Require all denied
+</IfModule>
+
+# Apache 2.2
+<IfModule !authz_core_module>
+    Deny from all
+</IfModule>
