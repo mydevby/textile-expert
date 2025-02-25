@@ -13,6 +13,8 @@
 			</div>
 			<?php get_template_part( 'templates/common/news-slider-post'); ?>
 		<?php } elseif($type == 'course'){?>
+			
+			<?php get_template_part( 'templates/courses/preview-courses'); ?>
 	
 			<?php get_template_part( 'templates/courses/list-who-benefits'); ?>
 		

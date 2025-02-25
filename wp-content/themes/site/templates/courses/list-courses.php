@@ -20,11 +20,11 @@
 							$start          = get_field('course_start', $postId);
 							$duration       = get_field('dlitelnost_kursa', $postId);
 							$link           = get_post_permalink($postId);
-							$img            = get_field('img', $postId);
+							$prevyu_kursa   = get_field('prevyu_kursa', $postId);
 							?>
 							<div class="course-block swiper-slide">
 								<div class="course">
-									<img class="course-img" src="<?= $img ?>" alt="<?= $title ?>">
+									<img class="course-img" src="<?= $prevyu_kursa ?>" alt="<?= $title ?>">
 									<div class="course-info w-100">
 										<div class="course-time">
 											<div>Старт курса: <?= $start ?></div>
