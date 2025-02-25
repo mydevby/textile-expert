@@ -4,7 +4,7 @@ Template Name: Курсы
 */
 ?>
 <head>
-	<title>Курсы</title>
+	<title>Курсы!!!</title>
 </head>
 <?php get_header(); ?>
 <div class="course-preview">
