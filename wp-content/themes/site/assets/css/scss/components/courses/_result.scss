@@ -1,0 +1,53 @@
+.result {
+	padding: 140px 0;
+	background: $color-white;
+	
+	.row {
+		padding-top: 30px;
+	}
+	
+	&-list {
+		margin-bottom: 30px;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	
+	&-item {
+		padding: 20px;
+		margin-bottom: 10px;
+		background: $color-gray-bg;
+		@include flex(flex-start, sles-start, nowrap);
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	
+	&-number {
+		min-width: 60px;
+		margin-right: 10px;
+		@include font(32px, 400, 1.4, $color-orange, 'Montserrat');
+		flex-shrink: 0;
+	}
+	
+	&-text {
+		@include font(16px, 400, 1.4, $color-gray, 'Montserrat');
+		flex-grow: 1;
+	}
+	
+	.image {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		border-radius: 4px;
+		
+		img {
+			max-width: 100%;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}

@@ -1,8 +1,21 @@
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+
+
 @import 'components/custom';
+
+
+@import 'elements/tabs';
+@import 'elements/editor';
+
+
 @import 'components/home/preview-block';
 @import 'components/home/services-block';
 @import 'components/home/video-block';
 @import 'components/courses/course-preview';
+@import 'components/courses/program';
+@import 'components/courses/result';
 
 
 @import 'pages/contacts';

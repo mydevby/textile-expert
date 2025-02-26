@@ -1,0 +1,113 @@
+.tabs {
+	margin: 40px auto;
+	max-width: 980px;
+	
+	&:first-child {
+		margin-bottom: 0;
+	}
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
+	
+	&-tab {
+		@include flex(flex-start, flex-start, nowrap);
+		width: 100%;
+		padding: 30px 75px 30px 30px;
+		background: $color-gray-bg;
+		border-radius: 4px;
+		text-decoration: none;
+		margin: 10px 0;
+		position: relative;
+		@include transition();
+		
+		* {
+			@include transition();
+		}
+		
+		&:first-child {
+			margin-top: 0;
+		}
+		
+		&-num {
+			@include font(18px, 700, 1.4, $color-orange, 'Actay Wide');
+			margin-right: 10px;
+			flex-shrink: 0;
+		}
+		
+		&-title {
+			flex-grow: 1;
+			margin-right: 10px;
+			@include font(16px, 400, 1.4, $color-black, 'Montserrat');
+		}
+		
+		&-time {
+			position: relative;
+			padding-left: 28px;
+			@include font(18px, 400, 1.4, $color-gray-light, 'Montserrat');
+			flex-shrink: 0;
+			margin-left: 10px;
+			
+			&:before {
+				content: "";
+				@include position(absolute, 0, 50%, auto, auto);
+				@include icon("tabs-time.png");
+				background-size: contain;
+				@include size(20px, 20px);
+				transform: translateY(-50%);
+				@include transition();
+			}
+		}
+		
+		&-arrow {
+			@include position(absolute, null, 30px, 30px);
+			@include size(24px, 24px);
+			
+			&-path {
+				stroke: $color-orange;
+			}
+		}
+		
+		&:hover,
+		&.current {
+			background: $color-orange;
+			
+			.tabs-tab-arrow-path {
+				stroke: $color-white;
+			}
+			
+			.tabs-tab-num {
+				color: $color-white;
+			}
+			
+			.tabs-tab-time {
+				color: $color-white;
+				
+				&:before {
+					filter: grayscale(1) brightness(1000%);
+				}
+			}
+			
+			.tabs-tab-title {
+				color: $color-white;
+			}
+		}
+		
+		&.current {
+			.tabs-tab-arrow {
+				transform: rotate(180deg);
+			}
+		}
+	}
+	
+	&-tab-content {
+		padding: 20px;
+		display: none;
+		background: $color-gray-bg;
+		margin-top: -10px;
+		
+		&.current {
+			display: block;
+		}
+	}
+}
